@@ -1,0 +1,20 @@
+@import "tailwindcss" layer(base);
+@import "tailwindcss/utilities" layer(utilities);
+
+@theme {
+  /** Fonts */
+  --font-family-sans: var(--font-geist-sans), "Inter", Roboto, sans-serif;
+  /** Colors */
+  --color-background: rgb(220, 220, 220);
+  --color-foreground: rgb(20, 20, 20);
+}
+
+.dark {
+  --color-background: rgb(20, 20, 20);
+  --color-foreground: rgb(220, 220, 220);
+}
+
+:root {
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+}
