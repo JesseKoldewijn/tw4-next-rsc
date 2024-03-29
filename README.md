@@ -11,6 +11,10 @@
 
 > Blazingly fast App Router based Next.js application that uses the currently in alpha release of TailwindCSS v4.
 
+## TailwindCSS v4 references
+
+- [TailwindCSS v4 - Everything you need to know](https://daily.dev/blog/tailwind-css-40-everything-you-need-to-know-in-one-place)
+
 ## Install
 
 ```sh
