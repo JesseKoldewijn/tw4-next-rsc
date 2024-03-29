@@ -58,13 +58,14 @@ export const metadata: Metadata = {
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
   const cookieJar = cookies();
   const cookieJarTheme = cookieJar.get("theme");
+  const theme = cookieJarTheme?.value === "light" ? "light" : "dark";
 
   return (
     <html
       lang="en"
       className={cn(
         "transition-colors duration-500 ease-in-out",
-        cookieJarTheme?.value,
+        theme,
         GeistSans.variable,
         GeistMono.variable,
       )}
