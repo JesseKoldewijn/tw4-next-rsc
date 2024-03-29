@@ -1,8 +1,10 @@
-import { dependencies, devDependencies } from "package.json";
+import packageJson from "package.json";
 
 import { cookies } from "next/headers";
 
 import ThemeToggle from "@/components/theme/toggle";
+
+const { dependencies, devDependencies } = packageJson;
 
 const depKeys = ["next", "tailwindcss", "react", "react-dom"];
 const optionalKeys = ["next-themes", "geist"];
